@@ -30,3 +30,10 @@ class open_makedirs(object):
 
     def __exit__(self, type, value, traceback):
         self.f.close()
+
+
+def here():
+    """
+    Gets the absolute path of the current file's directory.
+    """
+    return os.path.dirname(os.path.realpath(__file__))
