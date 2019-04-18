@@ -37,4 +37,4 @@ def here():
     """
     Gets the absolute path of the current file's directory.
     """
-    return inspect.getouterframes(inspect.currentframe())[1][1]
+    return os.path.dirname(inspect.getouterframes(inspect.currentframe())[1][1])
