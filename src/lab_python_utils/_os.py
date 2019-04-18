@@ -35,14 +35,16 @@ class open_makedirs(object):
 
 def heref():
     """
-    Gets the absolute path of the calling file
+    Gets the absolute path of the calling context's file
     """
     return inspect.getouterframes(inspect.currentframe())[1][1]
 
 
 def here():
     """
-    Gets the absolute path of the calling file's directory.
+    Gets the absolute path of the calling context's directory.
+
+    Will throw with an ugly error message if there is no directory, such as in the case of stdin.
     """
     return os.path.dirname(inspect.getouterframes(inspect.currentframe())[1][1])
 
