@@ -33,8 +33,17 @@ class open_makedirs(object):
         self.f.close()
 
 
+def heref():
+    """
+    Gets the absolute path of the calling file
+    """
+    return inspect.getouterframes(inspect.currentframe())[1][1]
+
+
 def here():
     """
-    Gets the absolute path of the current file's directory.
+    Gets the absolute path of the calling file's directory.
     """
     return os.path.dirname(inspect.getouterframes(inspect.currentframe())[1][1])
+
+
