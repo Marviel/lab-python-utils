@@ -1,0 +1,15 @@
+# VIM
+*.swp
+*.swo
+
+# Python
+*.pyc
+*__pycache__
+
+# Mac
+*.DS_STORE
+
+
+# Pytest
+*.pytest_cache/
+
