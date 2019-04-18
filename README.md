@@ -1,3 +1,6 @@
+# L.A.B. Python Utilities - Luke's Python Helpers
+Just some nice lil' things for common lil' operations
+
 # Structure
 
 `
